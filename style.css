@@ -1,0 +1,92 @@
+:root{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    --bg-color:#082f49;
+    --text-color: #bfdbfe;
+    --button-color:#60a5fa;
+    --form-bg:#0c4a6e;
+    --hr-color:#64748b;
+    font-size: 15px;
+}
+*{
+    padding: 0;
+    margin: 0px;
+    line-height: 0;
+    
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 50px 0px;
+}
+.margin{
+    margin: 0px 20% ;
+}
+
+.floating{
+position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+.button{
+    background-color: var(--button-color);  
+    width: fit-content;
+    padding: 30px 20px;
+    border-radius: 60px;
+}
+.snap-right{
+    position:fixed;
+    right: 10px;
+}
+
+.addBookForm>.snap-right{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+label{
+    margin: 1rem 1.2rem;
+    color: var(--text-color);
+}
+input{
+
+    margin: 1rem 1rem 0px 1rem;
+    height: 2rem;
+    width: 70%;
+    border-radius: 20px;
+    padding: 1rem;
+    border: 1px solid var(--bg-color);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.addBookForm{
+visibility: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 1rem 0.2rem;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    background-color: var(--form-bg);
+    color: var(--bg-color);
+}
+
+
+h1{
+    margin: 30px 0px;
+    position: relative;
+    right: 0px;
+    left: 0px;
+}
+
+hr{
+    color:var(--hr-color);
+    
+    
+}
