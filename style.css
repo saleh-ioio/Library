@@ -71,6 +71,10 @@ input{
    display: none; 
 }
 
+input:invalid{
+    border:1px solid red;
+}
+
 .hide{
     display: none;
 }
