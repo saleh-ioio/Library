@@ -2,9 +2,9 @@
     padding: 0;
     margin: 0;
     line-height: 0;
-    --bg-color:#082f49;
-    --text-color: #bfdbfe;
-    --button-color:#60a5fa;
+    --bg-color:#0d202c;
+    --text-color: #dee0e4;
+    --button-color:#0c4b97;
     --form-bg:#0c4a6e;
     --hr-color:#64748b;
     font-size: 15px;
@@ -14,6 +14,10 @@
     margin: 0px;
     line-height: 0;
     
+}
+
+.colorWhite{
+    color: var(--text-color);
 }
 
 body{
@@ -63,20 +67,26 @@ input{
     background-color: var(--bg-color);
 }
 
-.addBookForm{
-visibility: hidden;
+.BookForm{
+   display: none; 
+}
+
+.hide{
+    display: none;
+}
+
+.bookformStyle{
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 0px;
     right: 0;
     padding: 1rem 0.2rem;
-    display: flex;
-    flex-direction: column;
     width: 20%;
     height: 100vh;
     background-color: var(--form-bg);
     color: var(--bg-color);
-}
-
+    }
 
 h1{
     margin: 30px 0px;
