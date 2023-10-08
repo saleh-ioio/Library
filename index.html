@@ -15,21 +15,36 @@
         </div>
         <hr>
         <div class="booklist margin">
-
+            <!-- <div class="bookCard">
+                <h2 class="txtName">The prince</h2>
+                <h3 class="txtauthor">sultan k</h3>
+                <h3 class="txtPagesNum">90 pages</h3>
+                <div class="flex">
+                    <div class="button deleteBtn">
+                        <p>delete</p>
+                    </div>
+                    <div class="button statusBtn">
+                        <p>read</p>
+                    </div>
+                </div>
+            </div> -->
 
         </div>
 
-            <div class="BookForm">
-                <div id="cancel" class="button snap-right">
-                    <h2  class="colorWhite">X</h2>
-                </div>
-                    <label for="">Book Name <br><input type="text" name="" required id="bookName"></label>
-                    <label for="">Book Author <br><input type="text" name=""  required id="authorName"></label>
-                    <label for="">have you read it?<input type="checkbox" required id="bookStatus"></label>
-                    <input  type="button"  value="add book"> 
-                
+        <div class="BookForm">
+            <div id="cancel" class="button snap-right">
+                <h2 class="colorWhite">X</h2>
             </div>
-        
+            <form id="form" action="#">
+                <label for="">Book Name <br><input type="text" name="" required minlength="2" id="bookName"  ></label>
+                <label for="">Book Author <br><input type="text" name="" minlength="2" required id="authorName"></label>
+                <label for="">Number of book pages <br><input type="number" name="" required id="pagesNum"></label>
+                <label for="">have you read it?<input type="checkbox" id="bookStatus"></label>
+                <label for="file">book Cover<input type="file" name="file" id=""></label>
+                <input id="saveBook" type="submit" value="add book">
+            </form>
+        </div>
+
         <div class="button floating addButton">
             <h2>+</h2>
         </div>

@@ -7,7 +7,9 @@
     --button-color:#0c4b97;
     --form-bg:#0c4a6e;
     --hr-color:#64748b;
+    --card-bg:rgb(33, 45, 56);
     font-size: 15px;
+    
 }
 *{
     padding: 0;
@@ -18,6 +20,35 @@
 
 .colorWhite{
     color: var(--text-color);
+}
+
+.bookCard h3, .bookCard h2, .bookCard .button{
+    
+    margin-top: 1.7rem;
+} 
+.booklist{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+    gap: 20px;
+
+}
+p{
+    font-size: 1rem;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+}
+.bookCard{
+    display: flex;
+    gap: 10px;
+    padding: 0.5rem 1.5rem;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    border-radius:20px ;
+    background-color: var(--card-bg);
 }
 
 body{
@@ -52,12 +83,13 @@ position: absolute;
 
 
 label{
-    margin: 1rem 1.2rem;
+    display: inline-block;
+    margin: 1rem 0.2rem;
     color: var(--text-color);
 }
 input{
 
-    margin: 1rem 1rem 0px 1rem;
+    margin: 1rem 0rem 0px 1rem;
     height: 2rem;
     width: 70%;
     border-radius: 20px;
@@ -74,13 +106,20 @@ input{
 input:invalid{
     border:1px solid red;
 }
+.read{
+    background-color: green;
+}
+
+.unread{
+    background-color: red;
+}
 
 .hide{
     display: none;
 }
 
 .bookformStyle{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     top: 0px;
