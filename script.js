@@ -83,13 +83,13 @@ console.log('kljlj');
   statusBtn.classList+= " button statusBtn";
   let statusTxt = document.createElement('p');
   statusBtn.classList += bookStatusInput.checked ? ' read' : ' unread';
-  statusTxt.textContent = bookStatusInput.checked ?  'read' : 'unread';
+  statusTxt.textContent = bookStatusInput.checked ?  'read' : 'not read';
   statusBtn.appendChild(statusTxt);
   statusBtn.addEventListener('click', ()=>{
     if( statusTxt.textContent == 'read'){
       statusBtn.classList.remove('read');
       statusBtn.classList += ' unread';
-      statusTxt.textContent = 'unread';
+      statusTxt.textContent = 'not read';
     }else{
       statusBtn.classList.remove('unread');
       statusBtn.classList += ' read';
